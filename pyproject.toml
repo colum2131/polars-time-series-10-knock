@@ -1,0 +1,21 @@
+[project]
+name = "polars-10knock"
+version = "0.1.0"
+description = "Polarsの時系列処理の10本ノック"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "polars>=1.29.0",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab",
+    "ruff",
+]
+
+[tool.ruff]
+exclude = [".git", ".ruff_cache", ".venv"]
+line-length = 100
+target-version = "py312"
